@@ -8,11 +8,6 @@ Spatial transcriptomics (ST) have revolutionized our understanding of gene expre
 
 <img src="model.png" width="800">
 
-# Dependences
-[![numpy-1.19.5](https://img.shields.io/badge/numpy-1.19.5-brightgreen)]
-[![torch-gpu-1.12.0](https://img.shields.io/badge/torch-gpu-1.12.0-brightgreen)]
-[![numpy-1.19.5](https://img.shields.io/badge/numpy-1.19.5-brightgreen)]
-[![numpy-1.19.5](https://img.shields.io/badge/numpy-1.19.5-brightgreen)]
-[![numpy-1.19.5](https://img.shields.io/badge/numpy-1.19.5-brightgreen)]
-[![numpy-1.19.5](https://img.shields.io/badge/numpy-1.19.5-brightgreen)]
-[![numpy-1.19.5](https://img.shields.io/badge/numpy-1.19.5-brightgreen)]
+# Datasets
+
+
