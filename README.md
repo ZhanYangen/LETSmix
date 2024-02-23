@@ -16,5 +16,7 @@ All datasets used in the SpaDA paper can be downloaded from the following websit
 
 # Usage
 
+There are three folders under the general "code/" folder, each contains four *.py files named "main", "data", "model", "analysis", respectively, which are codes for reproducing the performance of SpaDA under a specific dataset.
+- main.py: 
 
 
