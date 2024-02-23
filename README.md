@@ -1,3 +1,5 @@
+Note: This repository is not completely finished yet. Further updates are coming soon.
+
 # SpaDA
 [![python >3.8.16](https://img.shields.io/badge/python-3.8.16-brightgreen)](https://www.python.org/) 
 
@@ -9,5 +11,10 @@ Spatial transcriptomics (ST) have revolutionized our understanding of gene expre
 <img src="model.png" width="800">
 
 # Datasets
+
+All datasets used in the SpaDA paper can be downloaded from the following website: https://zenodo.org/records/10687718. These datasets have been curated and can be directly utilized with codes in this repository. For raw datasets, please refer to the "Data Availability" section in the SpaDA paper.
+
+# Usage
+
 
 
