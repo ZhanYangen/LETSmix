@@ -17,6 +17,12 @@ All datasets used in the SpaDA paper can be downloaded from the following websit
 # Usage
 
 There are three folders under the general "code/" folder, each contains four *.py files named "main", "data", "model", "analysis", respectively, which are codes for reproducing the performance of SpaDA under a specific dataset.
-- main.py: 
+
+- main.py: This file contains codes for training the SpaDA model. Users may change the hyperparametes in the class named "Args", located at the beginning of the codes. Importantly, the hyperparameter "datadir" should be adjusted to the file path of datasets after downloading all data from the provided link. For example, when using the DLPFC dataset, this hyperparameter should be set as ".../DLPFC/". Here, "..." is the path where you unzip the downloaded "DLPFC.zip" file.
+- data.py: This file contains codes for preprocessing the downloaded datasets, including produres of the top marker gene selection, pseudo-spots generation, construction of the LETS filter, and the dataloader preparation.
+- model.py: This file contains codes for constructing the SpaDA network.
+- analysis.py: This file contains codes for results analysis, including all kinds of qualitative and quantitative evaluations presented in the SpaDA paper. There are many subsections within this file, separated by "#%%". Each section has its own functionality, which is detailed in the code annotations beside "#%%".
+
+After adjusting hyperparameters in the main.py, simplely run this file to train the SpaDA model. Results will be saved at the user-defined hyperparameter "logdir".
 
 
