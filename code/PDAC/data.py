@@ -13,7 +13,7 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 Image.MAX_IMAGE_PIXELS = None
 
 def scale_adj(adj, l, sim):
-        return np.exp(-1*adj/(2*(l**2))) * sim
+    return np.exp(-1*adj/(2*(l**2))) * sim
 
 def find_l(l, step, adj, si, sim):
     ll = np.zeros([len(adj),1])
