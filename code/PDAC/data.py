@@ -31,7 +31,7 @@ def find_l(l, step, adj, si, sim):
                 break
     return ll
 
-def calculate_adj_matrix(adata_st, args, img=None, r=None, mat=None, l_list=np.arange(1,20,0.1)):
+def calculate_adj_matrix(adata_st, args, img=None, r=None, mat=None):
     # spatial and histological distance
     pos = adata_st.obsm['spatial']
     pmean = np.zeros([len(pos),3])
