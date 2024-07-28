@@ -1,4 +1,3 @@
-Note: This repository is not completely finished yet. Further updates are coming soon.
 
 # LETSmix
 [![python >3.8.16](https://img.shields.io/badge/python-3.8.16-brightgreen)](https://www.python.org/) 
