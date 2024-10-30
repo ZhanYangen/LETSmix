@@ -10,7 +10,7 @@ Spatial transcriptomics (ST) has revolutionized our understanding of gene expres
 
 # Datasets
 
-All datasets used in the LETSmix paper can be downloaded from the following website: https://zenodo.org/records/10687718. These datasets have been curated and can be directly utilized with codes in this repository. For raw datasets, please refer to the "Data Availability" section in the LETSmix paper.
+All datasets used in the LETSmix paper can be downloaded from the following website: [https://zenodo.org/records/10687718](https://zenodo.org/records/11114959). These datasets have been curated and can be directly utilized with codes in this repository. For raw datasets, please refer to the "Data Availability" section in the LETSmix paper.
 
 # Usage
 
