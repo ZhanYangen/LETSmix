@@ -24,12 +24,21 @@ After adjusting hyperparameters in the main.py, simplely run this file to train 
 
 # Packages version
 torch (gpu verion): 1.12.0
+
 matplotlib: 3.4.3
+
 numpy: 1.22.0
+
 scanpy: 1.9.1
+
 pandas: 1.4.0
+
 scipy: 1.10.1
+
 anndata: 0.8.0
+
 scikit-learn (sklearn): 1.0.1
+
 Pillow (PIL): 8.4.0
+
 scikit-image (skimage): 0.21.0
