@@ -4,7 +4,7 @@
 
 This repository provides the official open-source code and public datasets of the paper entitled "LETSmix: a spatially informed and learning-based domain adaptation method for cell-type deconvolution in spatial transcriptomics." (https://www.biorxiv.org/content/10.1101/2024.04.27.591425v1)
 
-Spatial transcriptomics (ST) has revolutionized our understanding of gene expression patterns by incorporating spatial context. However, many ST technologies operate on heterogeneous cell mixtures due to limited spatial resolution. Current methods for cell-type deconvolution often underutilize spatial context information inherent in ST and the paired histopathological images, meanwhile neglect domain variances between ST and the reference single-cell RNA sequencing (scRNA-seq) data. To address these issues, we present LETSmix, a deep learning-based domain adaptation method trained on labelled pseudo-spots generated from scRNA-seq data, and mixed real-spots that are refined by a designed LETS filter leveraging correlations among neighboring spots with similar morphological features. The performance of LETSmix is demonstrated across three public ST datasets through comprehensive assessments, setting a new record among current state-of-the-art models. Our findings indicate that LETSmix accurately estimates the proportions of various cell types, effectively mapping them to their expected areas. The utilization of domain adaptation techniques enables LETSmix to achieve highly stable results when trained with different reference scRNA-seq datasets. Applications of LETSmix to diverse tissues, including the human dorsolateral prefrontal cortex, human pancreatic ductal adenocarcinoma, and mouse liver, showcase its robust performance and generalizability across different biological contexts. 
+Spatial transcriptomics (ST) has revolutionized our understanding of gene expression patterns by incorporating spatial context. However, many ST technologies operate on heterogeneous cell mixtures due to limited spatial resolution. To resolve cell type composition at each sequencing spot, several deconvolution methods have been proposed. Yet, these approaches often underutilize spatial context inherent in ST data and paired histopathological images, meanwhile overlooking domain variances between ST and reference single-cell RNA sequencing (scRNA-seq) data. Here, we present LETSmix, a novel deconvolution method that enhances spatial correlations within ST data using a tailored LETS filter, and employs a mixup-augmented domain adaptation strategy to address domain shifts. The performance of LETSmix was validated across diverse ST platforms and tissue types, including 10x Visium human dorsolateral prefrontal cortex, ST human pancreatic ductal adenocarcinoma, 10x Visium mouse liver, and Stereo-seq mouse olfactory bulb datasets. Our findings demonstrate that the proposed method accurately estimates cell type proportions and effectively maps them to the expected regions, establishing a new record among current state-of-the-art models. LETSmix is expected to serve as a robust tool for advancing studies on cellular composition and spatial architecture in spatial transcriptomics. 
 
 <img src="method.png" width="800">
 
@@ -14,13 +14,22 @@ All datasets used in the LETSmix paper can be downloaded from the following webs
 
 # Usage
 
-There are three folders under the general "code/" folder, each contains four *.py files named "main", "data", "model", "analysis", respectively, which are codes for reproducing the performance of LETSmix under a specific dataset.
+Here we provide codes for the implementation of LETSmix on the PDAC-A dataset as an example. Descriptions for code files are as follows:
 
-- main.py: This file contains codes for training the LETSmix model. Users may change the hyperparametes in the class named "Args", located at the beginning of the codes. Importantly, the hyperparameter "datadir" should be adjusted to the file path of datasets after downloading all data from the provided link. For example, when using the DLPFC dataset, this hyperparameter should be set as ".../DLPFC/". Here, "..." is the path where you unzip the downloaded "DLPFC.zip" file.
+- main.py: This file contains codes for training the LETSmix model. Users may change the hyperparametes in the class named "Args", located at the beginning of the codes. Importantly, the hyperparameter "datadir" should be adjusted to the file path of datasets after downloading the PDAC dataset from the provided link.
 - data.py: This file contains codes for preprocessing the downloaded datasets, including produres of the top marker gene selection, pseudo-spots generation, construction of the LETS filter, and the dataloader preparation.
-- model.py: This file contains codes for constructing the LETSmix network.
-- analysis.py: This file contains codes for results analysis, including all kinds of qualitative and quantitative evaluations presented in the LETSmix paper. There are many subsections within this file, separated by "#%%". Each section has its own functionality, which is detailed in the code annotations beside "#%%".
+- model.py: This file contains codes for constructing and training the LETSmix network.
 
 After adjusting hyperparameters in the main.py, simplely run this file to train the LETSmix model. Results will be saved at the user-defined hyperparameter "logdir".
 
-
+# Packages version
+torch (gpu verion): 1.12.0
+matplotlib: 3.4.3
+numpy: 1.22.0
+scanpy: 1.9.1
+pandas: 1.4.0
+scipy: 1.10.1
+anndata: 0.8.0
+scikit-learn (sklearn): 1.0.1
+Pillow (PIL): 8.4.0
+scikit-image (skimage): 0.21.0
