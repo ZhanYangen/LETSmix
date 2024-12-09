@@ -14,13 +14,7 @@ All datasets used in the LETSmix paper can be downloaded from the following webs
 
 # Usage
 
-Here we provide codes for the implementation of LETSmix on the PDAC-A dataset as an example. Descriptions for code files are as follows:
-
-- main.py: This file contains codes for training the LETSmix model. Users may change the hyperparametes in the class named "Args", located at the beginning of the codes. Importantly, the hyperparameter "datadir" should be adjusted to the file path of datasets after downloading the PDAC dataset from the provided link.
-- data.py: This file contains codes for preprocessing the downloaded datasets, including produres of the top marker gene selection, pseudo-spots generation, construction of the LETS filter, and the dataloader preparation.
-- model.py: This file contains codes for constructing and training the LETSmix network.
-
-After adjusting hyperparameters in the main.py, simplely run this file to train the LETSmix model. Results will be saved at the user-defined hyperparameter "logdir".
+Here we provide codes for the implementation of LETSmix on the PDAC-A dataset as an example. 
 
 # Packages version
 torch (gpu verion): 1.12.0
