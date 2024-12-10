@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: LETSmix
+Version: 1.1.1
+Summary: LETSmix: a spatially informed and learning-based domain adaptation method for cell-type deconvolution in spatial
+Home-page: https://github.com/ZhanYangen/LETSmix
+Author: Yangen Zhan
+Author-email: zygmail378@163.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
