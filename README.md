@@ -1,6 +1,6 @@
 
 # LETSmix
-[![python >3.8.16]([https://img.shields.io/badge/python-3.8.16-brightgreen)](https://www.python.org/](https://link.springer.com/article/10.1186/s13073-025-01442-8)) 
+[![python >3.8.16](https://link.springer.com/article/10.1186/s13073-025-01442-8) 
 
 This repository provides the official open-source code and public datasets of the paper entitled "LETSmix: a spatially informed and learning-based domain adaptation method for cell-type deconvolution in spatial transcriptomics." (https://www.biorxiv.org/content/10.1101/2024.04.27.591425v2)
 
